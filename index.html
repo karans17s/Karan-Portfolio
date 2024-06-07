@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>it's karan resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/716f02f38f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <!------------this video play in whole background part------------>
+
+    <video autoplay muted loop id="video-bg">
+        <source src="video\resume-video-3.mp4.crdownload.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+
+    <!------------This is Header part------------>  
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">INTERNSHIP</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+    
+            <div class="header-text">
+                <p>ML Learner</p>
+                <h1>Heyy , I'm <span>Karan</span> <br>Shingala</h1>
+            </div>
+    
+            <img src="img\good-11.png" alt="Interesting Image" id="header-img">
+            <video id="header-video" autoplay muted loop>
+                <source src="video\header-v-3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    
+    
+    
+
+
+
+    <!------------This is about part------------>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img\about-img.jpg">
+                <img src="img\about-img-2.jpg">
+                <img src="img\about-img-3.jpg">
+            </div>
+            
+
+            <div class="about-col-2">
+                <h1 class="subtitle">
+                    <b>About me</b>
+                </h1>
+                <p class="for-about">
+                    I am a dedicated and enthusiastic software developer with a strong interest in machine learning, web development, data structures & algorithms (DSA), and database management systems (DBMS). With a background in creating innovative web applications and a deep understanding of machine learning techniques, I am passionate about leveraging technology to solve complex problems. My expertise in DBMS allows me to efficiently manage and manipulate data to support application performance and integrity. My strong analytical skills and commitment to continuous learning drive me to stay updated with the latest industry trends and advancements.
+                </p>
+             <div class="tab-title">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('language')">Language</p>
+             </div>
+             <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Machine Learning</span><br><p>I have a strong background in machine learning, with experience in developing and deploying predictive models, utilizing various algorithms such as neural networks, decision trees, and support vector machines, to solve complex real-world problems.</p></li>
+                    <li><span>Web Design</span><br><p>I possess strong web design skills, including expertise in HTML, CSS, JavaScript, and modern frameworks, enabling me to create visually appealing, responsive, and user-friendly websites.</p></li>
+                    <li><span>Database Management System</span><br><p>I possess strong skills in Database Management Systems (DBMS), enabling me to efficiently design, implement, and maintain robust databases, ensuring optimal data integrity, security, and performance across various applications.</p></li>
+                    <li><span>Data Strucutre</span><br><p>Data Structures refer to the organization, management, and storage format of data in a computer's memory. Algorithms, on the other hand, are step-by-step procedures for solving problems or performing tasks. Together, they form the backbone of software development, playing a critical role in designing efficient and scalable solutions.</p></li>
+                    <li><span>Operating system</span><br><p>Possessing a deep understanding of operating systems is akin to having a secret superpower in the tech world. It grants you the ability to tame the wild complexities of various platforms, whether it's the user-friendly interface of Windows, the sleek efficiency of macOS, or the robust flexibility of Linux.</p></li>
+                </ul>
+             </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>School</span><br>
+                    <li><b>Shree V.J. Modi School</b></li>
+                    <li>Rajkot,Gujarat,India</li>
+                    <li>Year : 2008 - 2022 </li>
+                    <li>SSC Board PR : 98.99</li>
+                    <li>HSC Board PR : 99.23</li>
+                </li>
+                    <li><span>Collage</span><br>
+                        <li><b>Nirma University</b></li>
+                        <li>Ahemdabad,Gujarat,India</li>
+                        <li>Year : 2022 - 2026</li>
+                        <li>CGPA : 8.57 out of 10</li>
+                    </li>
+                </ul>
+             </div>
+
+             <div class="tab-contents" id="language">
+                <ul>
+                    <li><span>English</span><br><i class="fa-solid fa-check"></i></li>
+                    <li><span>Hindi</span><br><i class="fa-solid fa-check"></i></li>
+                    <li><span>Gujarati</span><br><i class="fa-solid fa-check"></i></li>
+                </ul>
+             </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+<!-------------This is Internship & project section--------------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Internship & projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-file"></i>
+             
+                <h2>Develop Own Cloud Computing
+                    with AI Intelligence by Custom Machine/Deep Learning Model that deploy using
+                    DevOps Technology Integrated with Generative AI - ChatGPT API with Python TUI</h2>
+                <p>
+                This is my first Internship about ML/DL...
+                </p>
+                <button class="learn-more-btn" onclick="window.open('internship.html', '_blank')">Learn More...</button>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Web Design
+                    "Feastify: Your Ultimate Food Ordering Experience"
+                    "Wanderlust World: Explore, Discover, and Travel with Ease"
+                </h2>
+                <button class="learn-more-btn" onclick="window.open('web_application_based_project.html', '_blank')">Learn More...</button>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-researchgate"></i>
+                <h2>Research-Work:
+                    focused on advancing network security and cryptography. My work explores , Tapestry of Cipher Evolution..
+                </h2>
+                <button class="learn-more-btn" onclick="window.open('Research-Work.html', '_blank')">Learn More...</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-------------------------This is portfolio----------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <div class="sub-title">
+            Focused Computer Languages
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="img\java-img.webp">
+                 <div class="layer">
+                    <h3>JAVA</h3>
+                    <p>I have a solid grasp of Java programming, from the basics to advanced concepts, including Spring Boot and Java Apache technologies.</p>
+                 </div>
+            </div>
+
+            <div class="work">
+                <img src="img\python-img-3.webp">
+                <div class="layer">
+                    <h3>PYTHON</h3>
+                    <p>In my first internship, I learned Python proficiently, and I've used it extensively for various projects, ranging from web development to data analysis. </p>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="img\c-language-img.jpg">
+                <div class="layer">
+                    <h3>C</h3>
+                    <p>First year mini-project using C language, having mastered its syntax and concepts. With C, I can develop efficient and robust software solutions.</p>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="img\shell-script.jpg">
+                <div class="layer">
+                    <h3>SHELL-SCRIPT</h3>
+                    <p>In operating system , I have a strong proficiency in shell scripting, which I've used extensively for automation and system administration tasks.</p>
+                </div>
+            </div>
+        </div>
+      <a href="see_more.html" class="btn">see more</a>
+    </div>
+</div>
+
+
+<!------------This is contact part-------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="contact-left">
+            <h1 class="sub-contact">
+                contact me !
+            </h1>
+            <p><i class="fa-solid fa-paper-plane"></i>karanshingala33@gmail.com</p>
+            <p><i class="fa-solid fa-phone-volume"></i>+91-9106657225</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/karan-shingala-7342192b8"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100095524681454&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/invites/contact/?igsh=1w4u38qfzj21h&utm_content=hiadgb9"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/shingala_k9079?t=rkbuohP8yqBBY_oY97nuhQ&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://github.com/karan17s"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="permission.html" class="btn btn2">Download cv</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="name" placeholder="your name" required>
+                <input type="email" name="email" placeholder="your email" required>
+                <textarea name="message" placeholder="your message" required></textarea>
+                <button type="submit" class="btn btn2">submit</button>
+            </form>
+
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 karan shingala.<i class="fa-solid fa-heart-pulse"></i> all rights reserved.</p>
+    </div>
+</div>
+
+
+
+<!------------Now apply some java script logic------------>
+
+<script>
+    window.addEventListener('load', function() {
+    document.getElementById('header-img').classList.add('animate');
+});
+
+</script>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+<script>
+    let side = document.getElementById("sidemenu");
+    function openmenu(){
+         side.style.right = "0";
+    }
+    function closemenu(){
+         side.style.right = "-200px";
+    }
+
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwjK8Z04RxgDvf2ritIRN8mYEX7ex5YlVtCJ2ms2U9iLbCbACj5weWCcPnx9qdA-hoa/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Your Message sent successfully to karan shingala!";
+            setTimeout(function(){
+                msg.innerHTML="";
+                
+        },5000)
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>

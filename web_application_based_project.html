@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .project {
+            margin-bottom: 40px;
+            background-color: #65a665; /* Change background color to green */
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #fff;
+            text-transform: uppercase;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+
+        .project:hover .project-title {
+            transform: scale(1.05);
+        }
+
+        .project-details {
+            font-size: 16px;
+            color: #fff;
+            transition: transform 0.3s;
+        }
+
+        .project-details p {
+            margin-bottom: 10px;
+        }
+
+        .project-details ul {
+            padding-left: 20px;
+            list-style: none;
+        }
+
+        .project-details ul li {
+            list-style-type: disc;
+            margin-bottom: 5px;
+            transition: transform 0.3s;
+        }
+
+        .project-details b {
+            color: #fff;
+        }
+
+        .project-details ul li:before {
+            content: "\2022";
+            color: #fff;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            transition: transform 0.3s;
+        }
+
+        .project-details {
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+
+        .project:hover .project-details {
+            transform: translateY(-10px);
+        }
+
+        .project-details ul li:hover {
+            transform: translateX(10px);
+        }
+
+        .project-details ul li:hover:before {
+            transform: scale(1.5);
+        }
+
+        .project:before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(135deg, #65a665, #57b2e4, #8a5aea);
+            border-radius: 20px;
+            z-index: -1;
+            transition: opacity 0.4s ease-in-out;
+            opacity: 0;
+        }
+
+        .project:hover:before {
+            opacity: 1;
+        }
+
+        .project-title:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            z-index: -1;
+            transition: opacity 0.4s ease-in-out;
+            opacity: 0;
+        }
+
+        .project-title:hover:before {
+            opacity: 1;
+        }
+
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromRight {
+            0% {
+                transform: translateX(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .project-title,
+        .project-details {
+            animation: slideInFromLeft 0.5s ease-out, fadeIn 0.5s ease-out;
+        }
+
+        .project-details {
+            animation-delay: 0.2s;
+        }
+
+        .project:hover .project-details {
+            animation: slideInFromRight 0.5s ease-out, fadeIn 0.5s ease-out;
+        }
+
+        .project:hover .project-details {
+            animation-delay: 0.2s;
+        }
+    </style>
+</head>
+<body>
+
+<div class="project">
+    <div class="project-title"><b>Feastify: Your Ultimate Food Ordering Experience</b></div>
+    <div class="project-details">
+        <p><b>Project Overview:</b></p>
+        <p>Feastify is a web application that offers users the ultimate food ordering experience. It allows users to browse through a wide range of restaurants, cuisines, and dishes, and place their orders online.</p>
+        <p><b>Key Features:</b></p>
+        <ul>
+            <li>Search and browse restaurants by cuisine, location, or dish</li>
+            <li>View detailed menus with images and descriptions</li>
+            <li>Place orders directly through the website</li>
+            <li>Customize orders and add special instructions</li>
+            <li>Secure online payments</li>
+            <li>Track the status of orders in real-time</li>
+            <li>Rate and review restaurants and dishes</li>
+        </ul>
+        <p><b>Technologies Used:</b></p>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+        </ul>
+    </div>
+</div>
+
+<div class="project">
+    <div class="project-title"><b>Wanderlust World: Explore, Discover, and Travel with Ease</b></div>
+    <div class="project-details">
+        <p><b>Project Overview:</b></p>
+        <p>Wanderlust World is a comprehensive travel website that aims to provide users with a seamless experience for exploring, discovering, and planning their travels with ease. It offers a wide range of features to help users plan their trips efficiently.</p>
+        <p><b>Key Features:</b></p>
+        <ul>
+            <li>Search and explore destinations worldwide</li>
+            <li>View detailed information about destinations, including attractions, accommodations, and local activities</li>
+            <li>Plan and customize travel itineraries</li>
+            <li>Book flights, accommodations, and activities directly through the website</li>
+            <li>Get recommendations based on travel preferences and interests</li>
+            <li>Access travel guides and tips from experienced travelers</li>
+            <li>Share travel experiences and tips with other users</li>
+        </ul>
+        <p><b>Technologies Used:</b></p>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>MongoDB</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
